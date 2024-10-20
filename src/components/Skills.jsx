@@ -1,0 +1,56 @@
+import React from 'react';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt } from 'react-icons/fa';
+import { SiMongodb, SiTailwindcss, SiGithub, SiBootstrap } from 'react-icons/si';
+
+const skillsData = [
+  {
+    category: 'Frontend',
+    skills: [
+      { name: 'HTML5', icon: <FaHtml5 /> },
+      { name: 'CSS3', icon: <FaCss3Alt /> },
+      { name: 'JavaScript', icon: <FaJs /> },
+      { name: 'React', icon: <FaReact /> },
+      { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
+      { name: 'Bootstrap', icon: <SiBootstrap /> },
+    ],
+  },
+  {
+    category: 'Backend',
+    skills: [
+      { name: 'Node.js', icon: <FaNodeJs /> },
+      { name: 'MongoDB', icon: <SiMongodb /> },
+      { name: 'Git', icon: <FaGitAlt /> },
+    ],
+  },
+  {
+    category: 'Tools',
+    skills: [
+      { name: 'GitHub', icon: <SiGithub /> },
+    ],
+  },
+];
+
+const Skills = () => {
+  return (
+    <section id="skills">
+      <h2>Skills</h2>
+      <div className="skills-container">
+        {skillsData.map((category, index) => (
+          <div className="skills-category" key={index}>
+            <h3>{category.category}</h3>
+            <ul>
+              {category.skills.map((skill, idx) => (
+                <li key={idx} className="skill-item">
+                  <span className="skill-icon">{skill.icon}</span>
+                  {skill.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Skills;
