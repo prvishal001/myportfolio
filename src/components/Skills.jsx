@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt } from 'react-icons/fa';
-import { SiMongodb, SiTailwindcss, SiGithub, SiBootstrap } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaCode, FaFileAlt } from 'react-icons/fa';
+import { SiMongodb, SiTailwindcss, SiGithub, SiBootstrap, SiPhp, SiMysql, SiCanva } from 'react-icons/si';
 
 const skillsData = [
   {
@@ -17,6 +17,8 @@ const skillsData = [
   {
     category: 'Backend',
     skills: [
+      { name: 'PHP', icon: <SiPhp /> },
+      { name: 'MySQL', icon: <SiMysql /> },
       { name: 'Node.js', icon: <FaNodeJs /> },
       { name: 'MongoDB', icon: <SiMongodb /> },
       { name: 'Git', icon: <FaGitAlt /> },
@@ -26,6 +28,9 @@ const skillsData = [
     category: 'Tools',
     skills: [
       { name: 'GitHub', icon: <SiGithub /> },
+      { name: 'VSCode', icon: <FaCode /> },
+      { name: 'Notepad++', icon: <FaFileAlt /> },
+      { name: 'Canva', icon: <SiCanva /> },
     ],
   },
 ];
