@@ -4,7 +4,7 @@ import React from 'react';
 import portfolioImage from '../assets/images/portfolio.jpg';
 import ecommerceImage from '../assets/images/ecommerce.jpg';
 import weathers from '../assets/images/weather.jpg';
-import todolists from '../assests/images/todolists.jpg';
+import todolists from '../assets/images/todolists.jpg';
 
 const projectsData = [
   {
