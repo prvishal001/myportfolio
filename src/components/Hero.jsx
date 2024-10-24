@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="hero">
       <img src={profileImg} alt="Profile" />
       <h1>Hi, I'm Vishal</h1>
-      <p>A Passionate Web Developer</p>
+      <p>A Passionate Web + App Developer</p>
       <a href="#projects" className="cta-button">See My Work</a>
     </section>
   );
