@@ -3,7 +3,8 @@ import React from 'react';
 // Import your local images
 import portfolioImage from '../assets/images/portfolio.jpg';
 import ecommerceImage from '../assets/images/ecommerce.jpg';
-import chatAppImage from '../assets/images/weather.jpg';
+import weathers from '../assets/images/weather.jpg';
+import todolists from '../assests/images/todolists.jpg';
 
 const projectsData = [
   {
@@ -23,8 +24,15 @@ const projectsData = [
   {
     name: 'Weather App',
     description: 'A weather forecasting app built with React and OpenWeather API, providing real-time weather updates and forecasts.',
-    image: chatAppImage,
+    image: weathers,
     link: 'https://weathers001.netlify.app',
+    isDisabled: false, // This project is clickable
+  },
+  {
+    name: 'Todo List',
+    description: 'A simple todolist application used to add your todo tasks for further working on that .',
+    image: todolists,
+    link: 'https://todolists001.netlify.app',
     isDisabled: false, // This project is clickable
   },
   // Add more projects here
